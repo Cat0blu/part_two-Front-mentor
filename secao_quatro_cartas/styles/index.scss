@@ -1,0 +1,159 @@
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url("../../fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-H2";
+    src: url("../../fonts/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins-Bold;
+}
+
+body 
+{
+    background: hsl(0, 0%, 100%);
+    color: hsl(234, 12%, 34%);
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    
+    p 
+    {
+        color: hsla(210, 6%, 44%, 0.596);
+ 
+    }
+
+    header 
+    {
+        padding: 20px;
+        margin-top: 50px;
+
+        #text_fine 
+        {
+            font-family: Poppins-H2;
+        }
+        h2 
+        {
+            line-height: 1.2em;
+        }
+
+
+        p 
+        {
+            margin: 1.2em 0 2em;
+        }
+        
+    }
+
+    main 
+    {
+        display: grid;
+        row-gap:30px ;
+        margin-bottom: 50px;
+        span 
+        {
+            
+            display: flex;
+            justify-content: end;
+            margin: 2em 0;
+        }
+
+        section 
+        {
+            padding: 20px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.308);
+            &:hover 
+            {
+                opacity: 0.8;
+            }
+        }
+
+        #cmp0
+        {
+            border-top: 5px solid hsl(180, 62%, 55%);
+            border-radius: 10px;
+        }
+        #cmp1 
+        {
+            border-top: 5px solid hsl(0, 78%, 62%);
+            border-radius: 10px;
+        }
+
+        #cmp2 
+        {
+            border-top: 5px solid hsl(34, 97%, 64%);
+            border-radius: 10px;
+        }
+
+        #cmp3 
+        {
+            border-top: 5px solid hsl(212, 86%, 64%);
+            border-radius: 10px;
+            
+        }
+
+       
+    }
+
+    @media (max-width:800px)
+    {
+        section, header
+        {
+            max-width: 340px;
+        }
+    }
+
+    @media (min-width:800px)
+    {
+        section
+        {
+            max-width: 370px;
+        }
+
+        header 
+        {
+            text-align: center;
+            margin: auto;
+            width: 600px;
+            h2 
+            {
+                font-size: 2.3em;
+            }
+        }
+
+        #cmp0 
+        {
+            grid-area: cmp0;
+        }
+        #cmp1
+        {
+            grid-area:cmp1 ;
+        }
+        #cmp2
+        {
+            grid-area: cmp2;
+        }
+        #cmp3
+        {
+            grid-area: cmp3;
+        }
+
+        main 
+        {   
+            column-gap: 30px;
+            grid-template-areas: ". cmp1."
+                                 "cmp0 cmp1 cmp3"
+                                 "cmp0 cmp2 cmp3"
+                                 ". cmp2 .";
+                                 
+        }
+    }
+}
