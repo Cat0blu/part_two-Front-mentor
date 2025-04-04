@@ -1,7 +1,8 @@
 # PROJECT: Seção de recursos de quatro cartas #
 
 ## Sobre: 
-- . 
+
+- layout de blocos, estruturado de forma diferente ao desktop. 
 
 ## Ferramentas utilizada
 
