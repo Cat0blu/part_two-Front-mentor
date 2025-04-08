@@ -2,7 +2,7 @@
 
 ## Sobre: 
 
-- . 
+- Layout mais simples, sem mudanças nos tamanhos de tela . 
 
 ## Ferramentas utilizada
 
