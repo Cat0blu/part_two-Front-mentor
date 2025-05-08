@@ -1,0 +1,446 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+#box_0 
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+   
+   
+    #box_0_nav
+    {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        margin:0 0 3em;
+    }
+
+    h1 
+    {
+        color: white;
+        text-align: center;
+        margin: 1em 0;
+       
+        margin: auto;
+    }
+
+    img 
+    {
+        margin: auto;
+        display: block;
+        margin-top: 2em;
+    }
+    
+}
+
+
+
+#box_5 
+{
+   
+    div > h2, p
+    {
+        color: hsl(167, 40%, 24%);
+    }
+   
+}
+
+#box_5, #box_6 
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    align-items: end;
+    div 
+    {
+        text-align: center;
+        h2 
+        {
+            margin-bottom: 1em;
+        }
+
+        p 
+        {
+            margin-bottom:3em ;
+        }
+    }
+}
+
+#box_6
+{
+    div > h2, p
+    {
+        color: hsl(198, 62%, 26%);
+    }
+   
+}
+
+#box_7
+{
+    #box_7_title
+    {
+        color: hsl(213, 9%, 39%);
+        text-align: center;
+        margin: 3em 0;
+    }
+
+    img 
+    {
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+        height: 80px;
+        margin-bottom: 2em;
+    }
+
+    .box_7_persons > p 
+    {
+        line-height: 1.5em;
+        margin-bottom: 2em;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    section 
+    {
+
+        h3,p
+        {
+            text-align: center;
+        }
+        p 
+        {
+            color: hsl(232, 10%, 55%);
+            margin: 10px 0 4em;
+        }
+    }
+
+   
+}
+
+#box_8 
+{
+    display: flex;
+}
+
+
+
+footer 
+{   
+    padding-top: 2em;
+    background:  hsla(168, 34%, 41%, 0.493);
+    h2 
+    {
+        color: hsl(167, 40%, 24%);
+        text-align: center;
+        margin-bottom: 1em ;
+    }
+
+    nav 
+    {
+        color:  hsl(168, 34%, 41%);
+        
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2em;
+        max-width: 400px;
+        margin: auto;
+        p 
+        { 
+            cursor: pointer;
+            &:hover 
+            {
+                color: white;
+            }
+        }
+   
+    }
+
+    #rs_ 
+    {
+       
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        max-width: 200px;
+        margin: 4em auto 0px;
+        padding-bottom: 3em;
+       
+        img 
+        {
+            cursor: pointer;
+
+            &:hover 
+            {
+                filter: brightness(7);
+            }
+           
+        }
+    }
+
+
+}
+
+.box_text
+{
+    
+    h2 
+    {
+        margin: 2em 0 1em;
+    }
+
+    .learn_more
+    {
+        margin: 1em 0 3em;
+    }
+}
+
+@media (max-width:600px)
+{
+
+    #box_0 
+    {
+        background-image: url("../../imgs/mobile/image-header.jpg");
+        height: 500px;
+        #cmp_icon_hamburger
+        {
+            display: block;
+        }
+        #cmp_navs 
+        {
+            display: none;
+        }
+        h1 
+        {
+            width: 200px;
+        }
+        
+    }
+    .box_text
+    {
+        text-align: center;
+    }
+
+    #box_1 > img, #box_3 > img 
+    {
+        width: 100%;
+    }
+
+
+    #box_5
+    {
+        background-image: url("../../imgs/mobile/image-graphic-design.jpg");
+    }
+
+    #box_6 
+    {
+        background-image: url("../../imgs/mobile/image-photography.jpg");
+    }
+
+    #box_8 
+    {   
+    
+    flex-wrap: wrap;
+    
+    img 
+    {
+        width: 50%;
+    }
+    }
+}
+
+@media (min-width:600px)
+{
+ 
+    main 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        max-width:1800px ;
+    }
+    
+    #box_0 
+    {
+        background-image: url("../../imgs/desktop/image-header.jpg");
+        width: 100%;
+        height: 600px;
+        #cmp_icon_hamburger
+        {
+            display: none;
+        }
+        #cmp_navs 
+        {
+            display: flex;
+            align-items: center;
+            p 
+            {
+                color: white;
+                padding: 10px;
+                &:hover 
+                {
+                    border-radius: 30px;
+                    
+                    background: hsla(206, 4%, 67%, 0.671);
+                    cursor: pointer;
+                    transition: background-Color 0.6s;
+                }
+            }
+        }
+      
+    }
+
+    .box_text 
+    {   
+        padding: 5%;
+        width: 39% !important;
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+       div 
+       {
+            margin: auto;
+           
+            p 
+            {
+                max-width: 370px;
+            }
+            .learn_more 
+            {
+                margin-top: 2em;
+            }
+
+
+       }
+    }
+
+    #box_1  
+    {   
+        width: 50%;
+        transform: translate(100%);
+        
+        img 
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #box_2
+    {
+        
+        width: 50%;
+        transform: translate(-100%);
+        .learn_more 
+        {
+            line-height: 4px;
+            &:hover 
+            {
+                border-bottom:7px solid hsl(51, 100%, 49%);
+                border-radius: 20px;
+                width: 120px;
+                cursor: pointer;
+            }
+
+            
+        }
+    }
+
+    #box_3 
+    {
+        width: 50%;
+       
+        img 
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #box_4 
+    {
+        width: 50%;
+        
+        .learn_more 
+        {
+            line-height: 4px;
+            &:hover 
+            {
+                border-bottom:7px solid hsl(7, 99%, 70%);
+                border-radius: 20px;
+                width: 120px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    #box_5
+    {
+        background-image: url("../../imgs/desktop/image-graphic-design.jpg");
+        width: 50%;
+        
+    }
+
+    #box_5, #box_6
+    {
+        div 
+        {
+            width: 300px;
+            line-height: 1.3em;
+            margin: 0 auto;
+        }
+    }
+
+    #box_6 
+    {
+        background-image: url("../../imgs/desktop/image-photography.jpg");
+        width: 50%;
+    }
+
+    #box_7 
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        #box_7_title 
+        {
+            flex-basis: 100%;
+        }
+        .box_7_persons 
+        {
+           
+            flex-basis: 23%;
+        }
+    }
+
+    #box_8 
+    {
+        width: 100%;
+        img 
+        {
+            width: 25%;
+        }
+    }
+
+    footer 
+    {
+        width: 100%;
+    }
+}
