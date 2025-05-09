@@ -134,12 +134,37 @@ footer #rs_ img:hover {
 }
 
 @media (max-width: 600px) {
+  #menu_mobile_activated {
+    position: absolute;
+    width: 80%;
+    height: 35%;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    transform: translate(13%);
+    margin-top: 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #menu_mobile_activated p {
+    color: hsl(213, 9%, 39%);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    transition: background-Color 0.6s;
+  }
+  #menu_mobile_activated p:hover {
+    background: hsl(51, 100%, 49%);
+    color: black;
+  }
   #box_0 {
     background-image: url("../../imgs/mobile/image-header.jpg");
     height: 500px;
   }
   #box_0 #cmp_icon_hamburger {
     display: block;
+    cursor: pointer;
   }
   #box_0 #cmp_navs {
     display: none;
@@ -171,6 +196,9 @@ footer #rs_ img:hover {
     display: flex;
     flex-wrap: wrap;
     max-width: 1800px;
+  }
+  main #menu_mobile_activated {
+    display: none !important;
   }
   #box_0 {
     background-image: url("../../imgs/desktop/image-header.jpg");
