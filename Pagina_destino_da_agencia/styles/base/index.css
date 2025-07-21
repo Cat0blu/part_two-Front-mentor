@@ -136,16 +136,26 @@ footer #rs_ img:hover {
 @media (max-width: 600px) {
   #menu_mobile_activated {
     position: absolute;
+    display: none;
     width: 80%;
     height: 35%;
-    background: rgb(255, 255, 255);
     z-index: 1;
+    flex-direction: column;
     transform: translate(13%);
-    margin-top: 100px;
-    display: none;
+    margin-top: 50px;
+  }
+  #menu_mobile_activated #triangulo {
+    border-bottom: 100px solid rgb(255, 255, 255);
+    border-left: 50px solid transparent;
+    margin-left: 87%;
+  }
+  #menu_mobile_activated div {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 10px;
   }
   #menu_mobile_activated p {
     color: hsl(213, 9%, 39%);

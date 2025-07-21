@@ -215,19 +215,34 @@ footer
 {
 
     #menu_mobile_activated
-    {
+    {   
+        
         position: absolute;
+        display: none;
         width: 80%;
         height: 35%;
-        background: rgb(255, 255, 255);
         z-index: 1;
-        transform: translate(13%);
-        margin-top: 100px;
-        display: none;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        
+        transform: translate(13%);
+        margin-top: 50px;
+        #triangulo 
+        {
+            border-bottom: 100px solid rgb(255, 255, 255);
+            border-left: 50px solid transparent;
+            margin-left: 87%;
+           
+        }
+        div 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: rgb(255, 255, 255);
+            padding: 10px;
+        }
+       
+
         p 
         {
             color: hsl(213, 9%, 39%);
