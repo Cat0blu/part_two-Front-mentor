@@ -13,7 +13,7 @@
     
 ## Paletas de cores
 
-- Primary
+### Primary
 
 - Soft red: hsl(7, 99%, 70%)
 - Yellow: hsl(51, 100%, 49%)
@@ -22,7 +22,7 @@
 - Dark moderate cyan (footer): hsl(168, 34%, 41%)
 
 
-- Neutral
+### Neutral
 
 - Very dark desaturated blue: hsl(212, 27%, 19%)
 - Very dark grayish blue: hsl(213, 9%, 39%)
