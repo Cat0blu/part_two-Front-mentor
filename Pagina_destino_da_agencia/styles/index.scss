@@ -48,6 +48,39 @@ body
     
 }
 
+#box_2
+{
+    .learn_more 
+        {
+            line-height: 4px;
+            border-bottom:7px solid hsla(51, 100%, 49%, 0.5);
+            border-radius: 20px;
+            width: 120px;
+            cursor: pointer;
+            &:hover 
+            {
+                border-color: hsl(51, 100%, 49%);
+            }
+        }
+}
+
+  #box_4 
+    {
+        .learn_more 
+            {
+                line-height: 4px;
+                border-bottom:7px solid hsla(7, 99%, 70%, 0.5);
+                border-radius: 20px;
+                width: 120px;
+                cursor: pointer;
+                &:hover 
+                {
+                    border-color: hsl(7, 99%, 70%);
+                }
+            }
+        
+    }
+
 
 
 #box_5 
@@ -203,6 +236,12 @@ footer
     h2 
     {
         margin: 2em 0 1em;
+        font-size: 2em;
+    }
+
+    .p_text_box_text
+    {
+        opacity: 0.7;
     }
 
     .learn_more
@@ -255,7 +294,6 @@ footer
                 background: hsl(51, 100%, 49%);
                 color: black;
                 
-                
             }
         }
     }
@@ -288,6 +326,14 @@ footer
     #box_1 > img, #box_3 > img 
     {
         width: 100%;
+    }
+    #box_2,#box_4
+    {
+        .learn_more 
+        {
+            margin: 2em auto;
+        
+        }
     }
 
 
@@ -398,19 +444,7 @@ footer
         
         width: 50%;
         transform: translate(-100%);
-        .learn_more 
-        {
-            line-height: 4px;
-            &:hover 
-            {
-                border-bottom:7px solid hsl(51, 100%, 49%);
-                border-radius: 20px;
-                width: 120px;
-                cursor: pointer;
-            }
-
-            
-        }
+        
     }
 
     #box_3 
@@ -427,18 +461,6 @@ footer
     #box_4 
     {
         width: 50%;
-        
-        .learn_more 
-        {
-            line-height: 4px;
-            &:hover 
-            {
-                border-bottom:7px solid hsl(7, 99%, 70%);
-                border-radius: 20px;
-                width: 120px;
-                cursor: pointer;
-            }
-        }
     }
 
 
