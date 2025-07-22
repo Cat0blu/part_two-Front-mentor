@@ -19,7 +19,7 @@ body
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   min-height: 100vh;
 } 
 
 header 
@@ -42,7 +42,6 @@ header:hover
     opacity: 1;
     transition: opacity 0.5s;
 }   
-
 
 main 
 {
@@ -78,8 +77,6 @@ main
     transition: opacity .5s;
 }
 
-
-
 #content_text 
 {
     width: 300px;
@@ -95,6 +92,5 @@ main
 {
     line-height: 1.5em;
     opacity: .7;
-    font-size: 17px;
-    
+    font-size: 17px;  
 }
