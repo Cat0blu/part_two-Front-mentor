@@ -1,0 +1,256 @@
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../../fonts/DMSans-VariableFont_opsz\,wght.ttf") format("truetype");
+}
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+
+body 
+{
+    background: hsl(26, 66%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    header 
+    {   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: hsl(10, 79%, 65%);
+        color: white;
+        border-radius: 15px;
+        padding: 25px;
+        width: 400px;
+        
+        #text_header 
+        {
+            opacity: 0.6;
+        }
+        #value_header 
+        {
+            font-size: 30px;
+            margin-top: 10px;
+            font-weight: bolder;
+        }
+    }
+
+    main 
+    { 
+       width: 400px;
+       border-radius: 15px;
+       margin-top: 1em;
+       padding: 20px;
+       background: white;
+       h2 
+       {
+         color: hsl(25, 47%, 15%);
+         text-shadow: 1px 1px   black;
+         margin-bottom: 3em;
+       }
+
+       #grafico 
+       {    
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+
+            div 
+            {
+                cursor: pointer;
+                div 
+                {   
+                    transition: opacity .5s;
+                    &:hover
+                    {
+                        opacity: 0.6;
+                    }
+                }
+            }
+
+            .text_flutuante 
+            {
+                color: white !important;
+                z-index: 1;
+                border-radius: 5px;
+                padding: 5px;
+                background: hsl(25, 47%, 15%);
+                width: 60px;
+                transform: translate(0px, -40px,);
+                opacity: 0;
+                transition: opacity 0.5s;
+                
+            }
+            #cmp_mon
+            {   
+                width: 50px;
+                text-align: center;
+                div 
+                {   
+                    width: 50px;
+                    height: 50px;
+                    background: hsl(10, 79%, 65%);
+                    border-radius: 10px;
+                }
+                p 
+                {
+                    color: hsl(28, 10%, 53%);
+                }
+            }
+
+            #cmp_tue
+            {   
+                width: 50px;
+                text-align: center;
+                div 
+                {   
+                    width: 50px;
+                    height: 100px;
+                    background: hsl(10, 79%, 65%);
+                    border-radius: 10px;
+                }
+
+                p 
+                {
+                    color: hsl(28, 10%, 53%);
+                }
+            }
+
+             #cmp_wed
+            {   
+                width: 50px;
+                text-align: center;
+                div 
+                {   
+                    width: 50px;
+                    height: 150px;
+                    background: hsl(10, 79%, 65%);
+                    border-radius: 10px;
+                }
+
+                p 
+                {
+                    color: hsl(28, 10%, 53%);
+                }
+            }
+
+             #cmp_thu
+            {   
+                width: 50px;
+                text-align: center;
+                div 
+                {   
+                    width: 50px;
+                    height: 100px;
+                    background: hsl(10, 79%, 65%);
+                    border-radius: 10px;
+                }
+
+                p 
+                {
+                    color: hsl(28, 10%, 53%);
+                }
+            }
+
+             #cmp_fri
+            {   
+                width: 50px;
+                text-align: center;
+                div 
+                {   
+                    width: 50px;
+                    height: 70px;
+                    background: hsl(10, 79%, 65%);
+                    border-radius: 10px;
+                }
+
+                p 
+                {
+                    color: hsl(28, 10%, 53%);
+                }
+            }
+
+             #cmp_sat
+            {   
+                width: 50px;
+                text-align: center;
+                div 
+                {   
+                    width: 50px;
+                    height: 120px;
+                    background: hsl(10, 79%, 65%);
+                    border-radius: 10px;
+                }
+
+                p 
+                {
+                    color: hsl(28, 10%, 53%);
+                }
+            }
+
+             #cmp_sun
+            {   
+                width: 50px;
+                text-align: center;
+                div 
+                {   
+                    width: 50px;
+                    height: 80px;
+                    background: hsl(10, 79%, 65%);
+                    border-radius: 10px;
+                }
+
+                p 
+                {
+                    color: hsl(28, 10%, 53%);
+                }
+            }
+       }
+
+       hr 
+       {
+         border: 1px solid  hsla(28, 10%, 53%, 0.267);
+         margin: 2em 0;
+       }
+       #bottom_main
+       {
+            display: flex;
+            flex-wrap: wrap;
+            h1
+            {
+                color: hsl(25, 47%, 15%);
+                text-shadow: 1px 1px   black;
+            }
+            .text_opaco 
+            {
+                color: hsl(28, 10%, 53%);
+            }
+            p 
+            {
+               width: 100%; 
+               color: hsl(25, 47%, 15%);;
+            }
+
+            span 
+            {   
+                margin-left: auto;
+                p 
+                {
+                    text-align: right;
+                }
+            }
+       }
+  
+    }
+
+}

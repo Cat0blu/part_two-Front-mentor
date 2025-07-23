@@ -6,3 +6,4 @@
 - [Componente_de_cartao](https://cat0blu.github.io/part_two-Front-mentor/Componente_de_cartao/)
 - [Pagina_destino_da_agencia](https://cat0blu.github.io/part_two-Front-mentor/Pagina_destino_da_agencia/)
 - [Componente_de_codigo_QRa](https://cat0blu.github.io/part_two-Front-mentor/Componente_de_codigo_QR/)
+- [Componente_grafico_despesas](https://cat0blu.github.io/part_two-Front-mentor/Componente_grafico_despesas/)

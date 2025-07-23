@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("../../fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+
+body {
+  background: hsl(26, 66%, 93%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(10, 79%, 65%);
+  color: white;
+  border-radius: 15px;
+  padding: 25px;
+  width: 400px;
+}
+body header #text_header {
+  opacity: 0.6;
+}
+body header #value_header {
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+body main {
+  width: 400px;
+  border-radius: 15px;
+  margin-top: 1em;
+  padding: 20px;
+  background: white;
+}
+body main h2 {
+  color: hsl(25, 47%, 15%);
+  text-shadow: 1px 1px black;
+  margin-bottom: 3em;
+}
+body main #grafico {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+body main #grafico div {
+  cursor: pointer;
+}
+body main #grafico div div {
+  transition: opacity 0.5s;
+}
+body main #grafico div div:hover {
+  opacity: 0.6;
+}
+body main #grafico .text_flutuante {
+  color: white !important;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 5px;
+  background: hsl(25, 47%, 15%);
+  width: 60px;
+  transform: translate(0px, -40px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+body main #grafico #cmp_mon {
+  width: 50px;
+  text-align: center;
+}
+body main #grafico #cmp_mon div {
+  width: 50px;
+  height: 50px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main #grafico #cmp_mon p {
+  color: hsl(28, 10%, 53%);
+}
+body main #grafico #cmp_tue {
+  width: 50px;
+  text-align: center;
+}
+body main #grafico #cmp_tue div {
+  width: 50px;
+  height: 100px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main #grafico #cmp_tue p {
+  color: hsl(28, 10%, 53%);
+}
+body main #grafico #cmp_wed {
+  width: 50px;
+  text-align: center;
+}
+body main #grafico #cmp_wed div {
+  width: 50px;
+  height: 150px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main #grafico #cmp_wed p {
+  color: hsl(28, 10%, 53%);
+}
+body main #grafico #cmp_thu {
+  width: 50px;
+  text-align: center;
+}
+body main #grafico #cmp_thu div {
+  width: 50px;
+  height: 100px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main #grafico #cmp_thu p {
+  color: hsl(28, 10%, 53%);
+}
+body main #grafico #cmp_fri {
+  width: 50px;
+  text-align: center;
+}
+body main #grafico #cmp_fri div {
+  width: 50px;
+  height: 70px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main #grafico #cmp_fri p {
+  color: hsl(28, 10%, 53%);
+}
+body main #grafico #cmp_sat {
+  width: 50px;
+  text-align: center;
+}
+body main #grafico #cmp_sat div {
+  width: 50px;
+  height: 120px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main #grafico #cmp_sat p {
+  color: hsl(28, 10%, 53%);
+}
+body main #grafico #cmp_sun {
+  width: 50px;
+  text-align: center;
+}
+body main #grafico #cmp_sun div {
+  width: 50px;
+  height: 80px;
+  background: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+body main #grafico #cmp_sun p {
+  color: hsl(28, 10%, 53%);
+}
+body main hr {
+  border: 1px solid hsla(28, 10%, 53%, 0.267);
+  margin: 2em 0;
+}
+body main #bottom_main {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main #bottom_main h1 {
+  color: hsl(25, 47%, 15%);
+  text-shadow: 1px 1px black;
+}
+body main #bottom_main .text_opaco {
+  color: hsl(28, 10%, 53%);
+}
+body main #bottom_main p {
+  width: 100%;
+  color: hsl(25, 47%, 15%);
+}
+body main #bottom_main span {
+  margin-left: auto;
+}
+body main #bottom_main span p {
+  text-align: right;
+}
+
+/*# sourceMappingURL=index.css.map */
