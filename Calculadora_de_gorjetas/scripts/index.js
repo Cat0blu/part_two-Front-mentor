@@ -45,7 +45,7 @@ btn_reset.addEventListener("click", ()=>{
     }
 })
 
-custom.addEventListener("click", ()=>{
+setInterval( ()=>{
     gorjetas.forEach((button)=>{
             button.classList.remove("button_activate")
         })
@@ -89,7 +89,7 @@ custom.addEventListener("click", ()=>{
             btn_reset.style.opacity = "1" 
         }
     }
-})
+},1000)
 
 gorjetas.forEach((gorjeta)=>{
 
@@ -123,16 +123,9 @@ gorjetas.forEach((gorjeta)=>{
         gorjeta_selected = gorjeta.innerHTML.replace("%", " ")
         gorjeta_selected = Number(gorjeta_selected /100)
 
-       
         tip = (Number(bill.value) * gorjeta_selected) / Number(number_people.value)
         total = (Number(bill.value) + tip * Number(number_people.value)) / Number(number_people.value)
 
-        console.log("bill: " + bill.value)
-        console.log("gorjeta selected: " + gorjeta_selected)
-        console.log("number_people: " + number_people.value)
-        console.log("tip: " + tip)
-        console.log("total: "+total)
-   
         if(tip)
         {
             tip_per_person.innerHTML = "$" + tip.toFixed(2)
