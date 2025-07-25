@@ -2,7 +2,7 @@
 
 ## Sobre: 
 
-- . 
+- calculando gorjetas, você pode escolher uma porcentagem do valor da conta ou gerar uma gorjeta com outro valor. 
 
 ## Ferramentas utilizada
 
