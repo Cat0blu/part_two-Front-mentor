@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "SpaceMono-Bold";
+  src: url("../../fonts/SpaceMono-Bold.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "SpaceMono-Bold";
+}
+
+body {
+  background: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body button, body input {
+  font-size: 25px;
+}
+body input[type=number] {
+  background: hsl(189, 47%, 97%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  padding: 5px;
+  text-align: right;
+  border-radius: 5px;
+}
+body input[type=number]::-webkit-outer-spin-button, body input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body input[type=number]:hover {
+  outline: 1px solid hsl(172, 67%, 45%);
+}
+body input[type=number]:focus {
+  outline: 1px solid hsl(172, 67%, 45%);
+}
+body main {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body main label {
+  display: block;
+}
+body main #cmp_BillValue {
+  margin: 1em 0;
+  background: hsl(189, 47%, 97%);
+  border-radius: 5px;
+}
+body main #cmp_BillValue img {
+  transform: translate(15px, -35px);
+}
+body main #cmp_BillValue input {
+  width: 100%;
+}
+body main #cmp_gorjetas {
+  margin: 1em 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 300px;
+}
+body main #cmp_gorjetas .porcentagens {
+  background: hsl(183, 100%, 15%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 170px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+body main #cmp_gorjetas .porcentagens:hover {
+  background: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+body main #cmp_gorjetas #custom {
+  width: 160px;
+}
+body main #number_people {
+  width: 100%;
+  margin-top: 10px;
+}
+body main #img_icon_person {
+  height: 20px;
+  transform: translate(15px, -35px);
+}
+body main #cmp_conta_final {
+  background: hsl(183, 100%, 15%);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+body main #cmp_conta_final div {
+  flex-basis: 100%;
+  color: white;
+}
+body main #cmp_conta_final .text_gray {
+  color: hsl(186, 14%, 43%);
+}
+body main #cmp_conta_final span {
+  margin-left: auto;
+  font-size: 30px;
+  color: hsla(172, 67%, 45%, 0.788);
+}
+body main #cmp_conta_final #btn_reset {
+  flex-basis: 100%;
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+body main #cmp_conta_final #btn_reset:hover {
+  background: hsl(185, 41%, 84%);
+}
+body main .button_activate {
+  color: hsl(183, 100%, 15%) !important;
+  background: hsl(172, 67%, 45%) !important;
+}
+@media screen and (max-width: 800px) {
+  body main {
+    width: 350px;
+  }
+  body main #cmp_conta_final {
+    margin-top: 2em;
+  }
+  body main #cmp_conta_final #btn_reset {
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 800px) {
+  body main #cmp_gorjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body main #cmp_gorjetas .porcentagens {
+    width: 110px;
+  }
+  body main #cmp_gorjetas #custom {
+    width: 100px;
+  }
+  body main #cmp_conta_final {
+    margin-left: 60px;
+  }
+  body main #cmp_conta_final #btn_reset {
+    margin-top: 120px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

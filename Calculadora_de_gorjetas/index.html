@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculadora_de_gorjetas</title>
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/base/index.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+<body>
+  <img src="images/logo.svg" alt="logo.svg">
+
+  <main>
+    <div id="cmp_main">
+      <p id="textBill">Bill</p>
+      <div id="cmp_BillValue">
+        <input type="number" placeholder="0">
+        <img src="images/icon-dollar.svg" alt="icon_dolar.svg">
+      </div>
+      <p>Select Tip %</p>
+      <div id="cmp_gorjetas">
+        <button class="porcentagens">5%</button>
+        <button class="porcentagens">10%</button>
+        <button class="porcentagens">15%</button>
+        <button class="porcentagens">25%</button>
+        <button class="porcentagens">50%</button>
+        <input type="number" placeholder="Custom" id="custom" >
+      </div>
+      
+      <label for="number_people">Number of people</label>
+      <input type="number" id="number_people" placeholder="0"> <!--erro do "e", trataar erros-->
+      
+      <img src="images/icon-person.svg" alt="icon-person.svg" id="img_icon_person">
+    </div>
+
+    <div id="cmp_conta_final">
+      <div>Tip Amount </div> 
+      <p class="text_gray">/ person</p>
+      <span id="tip_per_person">$0.00</span>
+
+      <div> Total </div> <p class="text_gray">/ person</p>
+      <span id="total_per_person"> $0.00</span>
+      
+      <button id="btn_reset">Reset</button>
+    </div>
+  </main>
+
+</body>
+</html>
