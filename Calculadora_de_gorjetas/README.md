@@ -9,6 +9,7 @@
     - Html(semantica)
     - Css e sass(estilos)
     - Node.js(instalação de ferramentas)
+    - js(interatividade)
  
     
 ## Paletas de cores

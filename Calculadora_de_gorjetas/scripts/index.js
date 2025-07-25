@@ -37,7 +37,6 @@ setInterval(()=>{
 
 }, 1000)
 
-
 btn_reset.addEventListener("click", ()=>{
     if(window.getComputedStyle(btn_reset).opacity === "1")
     {
