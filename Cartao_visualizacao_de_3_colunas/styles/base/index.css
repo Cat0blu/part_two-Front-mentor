@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "LexendDeca";
+  src: url("../../fonts/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "LexendDeca";
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 100px 0;
+  }
+  body main #cmp0 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  body main #cmp2 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  main {
+    border-radius: 10px;
+  }
+}
+@keyframes mudanca {
+  from, to {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(105%);
+  }
+}
+body {
+  background: hsl(0, 0%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+body main #cmp0, body main #cmp1, body main #cmp2 {
+  color: white;
+  padding: 30px;
+  width: 300px;
+}
+body main #cmp0 h1, body main #cmp1 h1, body main #cmp2 h1 {
+  margin-top: 20px;
+}
+body main #cmp0 p, body main #cmp1 p, body main #cmp2 p {
+  margin-top: 2em;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5em;
+  font-size: 15px;
+}
+body main #cmp0 .btn_learn_more, body main #cmp1 .btn_learn_more, body main #cmp2 .btn_learn_more {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin: 5em 0 10px 0;
+  width: 120px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, outline 0.5s;
+  animation: mudanca 1s linear infinite;
+}
+body main #cmp0 {
+  background: hsl(31, 77%, 52%);
+}
+body main #cmp0 .btn_learn_more {
+  color: hsl(31, 77%, 52%);
+}
+body main #cmp0 .btn_learn_more:hover {
+  outline: 1px solid white;
+  background: hsl(31, 77%, 52%);
+  color: white;
+}
+body main #cmp1 {
+  background: hsl(184, 100%, 22%);
+}
+body main #cmp1 .btn_learn_more {
+  color: hsl(184, 100%, 22%);
+}
+body main #cmp1 .btn_learn_more:hover {
+  outline: 1px solid white;
+  background: hsl(184, 100%, 22%);
+  color: white;
+}
+body main #cmp2 {
+  background: hsl(179, 100%, 13%);
+}
+body main #cmp2 .btn_learn_more {
+  color: hsl(179, 100%, 13%);
+}
+body main #cmp2 .btn_learn_more:hover {
+  outline: 1px solid white;
+  background: hsl(179, 100%, 13%);
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

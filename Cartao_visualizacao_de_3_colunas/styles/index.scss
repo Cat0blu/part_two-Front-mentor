@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "LexendDeca";
+    src: url("../../fonts/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "LexendDeca";
+}
+
+@media screen and (max-width:600px) {
+    body 
+    {
+        padding: 100px 0;
+        main 
+        {
+            #cmp0 
+            {
+                border-top-left-radius:  10px;
+                border-top-right-radius: 10px;
+            }
+
+            #cmp2 
+            {
+                border-bottom-left-radius:  10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px)
+{
+    main 
+        {
+           border-radius: 10px;
+        }
+}
+
+@keyframes mudanca 
+{
+    from,to{
+        transform: scale(100%);
+    }
+
+    50%
+    {
+        transform: scale(105%);
+    }
+}
+
+body 
+{
+    background: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    main 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+       
+
+        #cmp0, #cmp1, #cmp2
+        {
+            color: white;
+            padding: 30px;
+            width: 300px;
+            h1 
+            {
+                margin-top: 20px;
+            }
+            p 
+            {
+                margin-top: 2em;
+                color: hsla(0, 0%, 100%, 0.75);
+                line-height: 1.5em;
+                font-size: 15px;
+            }
+
+            .btn_learn_more
+            {
+                border-radius: 20px;
+                border: none;
+                padding: 10px;
+                margin: 5em 0 10px 0;
+                width: 120px;
+                cursor: pointer;
+                transition: background-color .5s, color 0.5s, outline 0.5s ;
+                animation: mudanca 1s linear infinite ;
+            }
+        }
+
+        #cmp0 
+        {
+            background: hsl(31, 77%, 52%);
+
+            .btn_learn_more
+            {
+                color: hsl(31, 77%, 52%);
+                &:hover 
+                {
+                    outline:1px solid white;
+                    background: hsl(31, 77%, 52%);
+                    color: white;
+                }
+            }
+        }
+
+        #cmp1
+        {
+            background: hsl(184, 100%, 22%);
+            .btn_learn_more
+            {
+                color: hsl(184, 100%, 22%);
+                &:hover 
+                {
+                    outline:1px solid white;
+                    background: hsl(184, 100%, 22%);
+                    color: white;
+                }
+            }
+        }
+
+         #cmp2
+        {
+            background: hsl(179, 100%, 13%);
+            .btn_learn_more
+            {
+                color: hsl(179, 100%, 13%);
+                &:hover 
+                {
+                    outline:1px solid white;
+                    background: hsl(179, 100%, 13%);
+                    color: white;
+                }
+            }
+        }
+    }
+}
