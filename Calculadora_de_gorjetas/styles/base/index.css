@@ -16,6 +16,9 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+body #img_logo_top {
+  margin-top: 10px;
+}
 body button, body input {
   font-size: 25px;
 }
@@ -52,6 +55,7 @@ body main #cmp_BillValue {
   margin: 1em 0;
   background: hsl(189, 47%, 97%);
   border-radius: 5px;
+  height: 50px;
 }
 body main #cmp_BillValue img {
   transform: translate(15px, -35px);
@@ -128,6 +132,11 @@ body main #cmp_conta_final #btn_reset:hover {
 body main .button_activate {
   color: hsl(183, 100%, 15%) !important;
   background: hsl(172, 67%, 45%) !important;
+}
+body main .error {
+  color: rgb(206, 41, 41);
+  background-color: rgba(206, 41, 41, 0.205);
+  outline: 2px solid rgba(255, 0, 0, 0.5) !important;
 }
 @media screen and (max-width: 800px) {
   body main {

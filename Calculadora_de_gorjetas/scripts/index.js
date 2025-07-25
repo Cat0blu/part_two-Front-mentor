@@ -16,11 +16,7 @@ setInterval(() => {
         window.alert("Numero muito grande(max_digitos 10)")
     }
 
-    // if(bill.value.includes("E"))
-    // {
-    //     window.alert("E presente")
-    // }
-
+ 
 }, 1000);
 
 setInterval(()=>{
@@ -53,6 +49,24 @@ custom.addEventListener("click", ()=>{
     gorjetas.forEach((button)=>{
             button.classList.remove("button_activate")
         })
+
+     if(bill.value === "")
+        {
+            bill.classList.add("error")
+        }
+    else 
+    {
+        bill.classList.remove("error")
+    }
+
+    if(number_people.value === "")
+    {
+        number_people.classList.add("error")
+    }
+    else
+    {
+        number_people.classList.remove("error")
+    }    
     if(custom.value.length > 0 )
     {
         gorjeta_selected = Number(custom.value)
@@ -81,6 +95,26 @@ gorjetas.forEach((gorjeta)=>{
 
     gorjeta.addEventListener("click", ()=>{
         custom.value = ""
+
+        if(bill.value === "")
+        {
+            bill.classList.add("error")
+        }
+        else 
+        {
+            bill.classList.remove("error")
+        }
+
+        if(number_people.value === "")
+        {
+            number_people.classList.add("error")
+        }
+        else
+        {
+            number_people.classList.remove("error")
+        }
+
+
         gorjetas.forEach((button)=>{
             button.classList.remove("button_activate")
         })
