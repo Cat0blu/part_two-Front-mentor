@@ -45,7 +45,7 @@ btn_reset.addEventListener("click", ()=>{
     }
 })
 
-setInterval( ()=>{
+custom.addEventListener("click", ()=>{
     gorjetas.forEach((button)=>{
             button.classList.remove("button_activate")
         })
@@ -89,7 +89,7 @@ setInterval( ()=>{
             btn_reset.style.opacity = "1" 
         }
     }
-},1000)
+})
 
 gorjetas.forEach((gorjeta)=>{
 
