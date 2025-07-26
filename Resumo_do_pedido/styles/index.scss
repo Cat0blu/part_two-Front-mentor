@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    @media screen and (max-width:600px) {
+        background: url("../../images/pattern-background-mobile.svg") no-repeat ;
+        background-size: contain;
+    }
+    
+    @media screen and (min-width:600px) {
+        background: url("../../images/pattern-background-desktop.svg") no-repeat ;
+        background-size: 100%;
+
+    }
+
+    main 
+    {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: hsl(225, 100%, 98%);
+        border-radius: 20px;
+        overflow: hidden;
+        h1 
+        {
+            margin: 1.3em 0 20px;
+            color: hsl(223, 47%, 23%);
+        }
+        #illustration-hero 
+        {
+            width: 100%;
+        }
+
+        #main_text 
+        {
+            width: 280px;
+            text-align: center;
+            line-height: 1.5em;
+            margin-bottom: 2em;
+            font-size: 16px;
+            color: hsl(224, 23%, 55%);
+        }
+
+        #cmp_music
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 15px;
+            background: hsla(225, 100%, 94%, 0.479);
+            width: 280px;
+            padding: 15px;
+            margin-bottom: 2em;
+            #text_music
+            {
+                color: hsl(223, 47%, 23%);
+                font-weight: bolder;
+            }
+            #value_music 
+            {
+                color:hsl(224, 23%, 55%);
+            }
+         
+            #link_change 
+            {
+                margin-left: 50px;
+                color: hsl(245, 75%, 52%);
+                
+                transition: opacity .5s;
+                &:hover 
+                {
+                    opacity: 0.6;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        button 
+        {
+            border-radius: 10px;
+            border: none;
+            background: hsl(245, 75%, 52%);
+            color: white;
+            width: 300px;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bolder;
+            margin-bottom: 1.3em;
+            transition:opacity .5s, box-shadow .5s;
+
+            &:hover 
+            {
+                opacity: 0.6;
+                box-shadow: 2px 8px 20px hsl(224, 23%, 55%);
+            }
+        }
+
+        #cancel_order 
+        {
+            color: hsl(223, 47%, 23%);
+            font-weight: bolder;
+            text-decoration: none;
+            margin-bottom: 30px;
+            &:hover 
+            {
+                opacity: .8;
+            }
+        }
+
+    }
+}
