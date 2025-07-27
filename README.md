@@ -10,3 +10,4 @@
 - [Calculadora_de_gorjetas](https://cat0blu.github.io/part_two-Front-mentor/Calculadora_de_gorjetas/)
 - [Cartao_visualizacao_de_3_colunas](https://cat0blu.github.io/part_two-Front-mentor/Cartao_visualizacao_de_3_colunas/)
 - [Resumo_do_pedido](https://cat0blu.github.io/part_two-Front-mentor/Resumo_do_pedido/)
+- [Pagina_destino_do_Huddle](https://cat0blu.github.io/part_two-Front-mentor/Pagina_destino_do_Huddle/)
