@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../../assets/fonts/Poppins-Bold.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins-Regular";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(0, 0%, 94%);
+}
+body input[type=number] {
+  font-size: 125%;
+  font-weight: bolder;
+}
+body input[type=number]::-webkit-outer-spin-button, body input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body main {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  border-radius: 20px;
+}
+body main #cmp_input_date {
+  display: flex;
+  margin: 1em 0 2em;
+  width: 100%;
+}
+body main #cmp_input_date label {
+  color: hsl(0, 1%, 44%);
+}
+body main #cmp_input_date label, body main #cmp_input_date input {
+  margin-right: 20px;
+}
+body main #cmp_input_date input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid hsla(0, 1%, 44%, 0.26);
+  cursor: pointer;
+}
+body main #cmp_input_date input:hover {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+body main #cmp_input_date input:focus {
+  outline: 1px solid hsl(259, 100%, 65%);
+}
+body main #cmp_btn_gerar_idade {
+  flex-basis: 100%;
+  height: 0.5px;
+  background: hsla(0, 1%, 44%, 0.26);
+}
+body main #cmp_btn_gerar_idade div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: hsl(259, 100%, 65%);
+  float: right;
+  transform: translate(0px, -25px);
+  cursor: pointer;
+  transition: background-color 0.8s;
+}
+body main #cmp_btn_gerar_idade div:hover {
+  background: black;
+}
+body main #cmp_btn_gerar_idade div:hover #gerar_idade {
+  background: black;
+}
+body main #cmp_btn_gerar_idade div #gerar_idade {
+  transform: scale(0.7);
+  background: hsl(259, 100%, 65%);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+body main #cmp_idade_gerada {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
+  line-height: 1em;
+}
+body main #cmp_idade_gerada p {
+  font-weight: bolder;
+}
+body main #cmp_idade_gerada #years_value, body main #cmp_idade_gerada #months_value, body main #cmp_idade_gerada #days_value {
+  color: hsl(259, 100%, 65%);
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    max-width: 350px;
+  }
+  main #cmp_idade_gerada {
+    font-size: 3em;
+  }
+  main #cmp_btn_gerar_idade {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  main {
+    max-width: 500px;
+  }
+  main #cmp_idade_gerada {
+    font-size: 4em;
+  }
+}
+.error {
+  outline: 1px solid hsl(0, 100%, 67%) !important;
+  color: hsl(0, 100%, 67%) !important;
+}
+
+.text_error0, .text_error1, .text_error2 {
+  font-size: 12px;
+  margin-top: 10px;
+  color: hsl(0, 100%, 67%);
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */
