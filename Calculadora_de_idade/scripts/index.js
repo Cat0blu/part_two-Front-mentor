@@ -56,7 +56,7 @@ btn_gerar_idade.addEventListener("click", ()=>{
         day_cmp.classList.remove("error")
         month_cmp.classList.remove("error")
         year_cmp.classList.remove("error")
-         day_cmp.nextElementSibling.style.display = "none" 
+        day_cmp.nextElementSibling.style.display = "none" 
         month_cmp.nextElementSibling.style.display = "none" 
         year_cmp.nextElementSibling.style.display = "none" 
     }
