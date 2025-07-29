@@ -12,3 +12,4 @@
 - [Resumo_do_pedido](https://cat0blu.github.io/part_two-Front-mentor/Resumo_do_pedido/)
 - [Pagina_destino_do_Huddle](https://cat0blu.github.io/part_two-Front-mentor/Pagina_destino_do_Huddle/)
 - [Calculadora_de_idade](https://cat0blu.github.io/part_two-Front-mentor/Calculadora_de_idade/)
+- [Cartao_de_perfil](https://cat0blu.github.io/part_two-Front-mentor/Cartao_de_perfil/)
