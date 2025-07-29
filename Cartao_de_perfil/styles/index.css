@@ -9,6 +9,7 @@
 }
 
 @media screen and (max-width:800px) {
+
     #img_top >img
     {
         height: 500px;
