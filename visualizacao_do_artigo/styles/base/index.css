@@ -25,17 +25,16 @@
   }
   .redes_mobile {
     border: 1px;
-    position: absolute;
     display: flex;
     align-items: center;
-    padding: 20px;
-    bottom: 50px;
+    padding: 40px;
     z-index: 1;
     max-width: 780px;
     width: 80%;
     height: 100px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    transform: translateY(-145%);
   }
   .redes_mobile p {
     font-size: 1.7em;
@@ -43,7 +42,6 @@
     color: hsl(212, 23%, 69%);
   }
   .redes_mobile img {
-    height: 30px;
     margin-left: 20px;
   }
   .redes_mobile .__svg_activate_redes {
@@ -51,16 +49,6 @@
   }
   #try {
     display: none;
-  }
-}
-@media (max-width: 587px) {
-  .redes_mobile {
-    transform: translateY(-15%);
-  }
-}
-@media (min-width: 587px) and (max-width: 1000px) {
-  .redes_mobile {
-    transform: translateY(-50px);
   }
 }
 @media (min-width: 1000px) {
@@ -170,8 +158,8 @@ body .__svg_activate_redes {
   background: hsl(212, 23%, 69%);
   margin-left: auto;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,7 +170,6 @@ body .__svg_activate_redes .img_icon_share {
 }
 body .redes {
   background: hsl(217, 19%, 35%);
-  display: flex;
   display: none;
 }
 
