@@ -16,7 +16,7 @@
     border-top-right-radius: 15px;
   }
   main #cmp_text {
-    width: 360px;
+    min-width: 360px;
     transform: translateY(-50px);
     z-index: 1;
     flex-basis: 80%;
@@ -24,13 +24,14 @@
     border-bottom-right-radius: 15px;
   }
   .redes_mobile {
+    border: 1px;
     position: absolute;
     display: flex;
     align-items: center;
     padding: 20px;
     bottom: 50px;
     z-index: 1;
-    max-width: 580px;
+    max-width: 780px;
     width: 80%;
     height: 100px;
     border-bottom-left-radius: 15px;
