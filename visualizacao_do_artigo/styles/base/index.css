@@ -55,12 +55,12 @@
 }
 @media (max-width: 587px) {
   .redes_mobile {
-    transform: translateY(-20px);
+    transform: translateY(-15%);
   }
 }
 @media (min-width: 587px) and (max-width: 1000px) {
   .redes_mobile {
-    transform: translateY(-40px);
+    transform: translateY(-50px);
   }
 }
 @media (min-width: 1000px) {
