@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width:900px) {
+        main > * 
+        {
+            margin: auto;
+            text-align: center;
+        }
+
+        main 
+        {
+           margin: 5em 0;
+           #text_main 
+           {
+             padding: 2em 0;
+           }
+
+           #cmp_reviews 
+           {
+                padding-bottom:3em;
+                .cmp_reviews_stars 
+                {
+                    margin: auto;
+                }
+           }
+            .comments
+            {
+                margin: auto;
+            }
+        }
+    }
+
+@media (min-width:900px) {
+    main 
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        grid-template-areas: "item1 item3"
+                              "item2 item3"
+                              "item4 item4";
+        h1 
+        {
+            grid-area: item1;
+        }
+        
+        #text_main
+        {
+            grid-area: item2;
+            margin: 2em 0 3em;
+        }
+
+        #cmp_reviews
+        {
+            grid-area: item3;
+            padding-top: 30px;
+            margin-left: 50px;
+            .cmp_reviews_stars:nth-child(2)
+            {
+                margin-left: 40px;
+            }
+            .cmp_reviews_stars:nth-child(3)
+            {
+                margin-left: 80px;
+            }
+            .cmp_reviews_stars 
+            {
+                display: flex;
+                align-items: center; 
+                
+                .stars 
+                {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        #cmp_comments 
+        {
+            grid-area: item4;
+           .comments:nth-child(2)
+            {
+                margin-top: 20px;
+            }
+            .comments:nth-child(3)
+            {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    main 
+    {
+
+        h1 
+        {
+            color: hsl(300, 43%, 22%);
+            width: 280px;
+            font-size: 2.5em;
+        }
+        #text_main 
+        {
+            color: hsl(303, 10%, 53%);
+            min-width: 200px;///
+            max-width: 400px;///
+            line-height: 1.5em;
+        }
+        #cmp_reviews 
+        {
+            .cmp_reviews_stars 
+            {
+                background: hsl(300, 24%, 96%);
+                border-radius: 10px;
+                margin-top: 10px;///
+                padding: 15px;
+                width: 400px;
+                
+                .stars 
+                {
+                    &::before 
+                    {
+                        content: "\2605  \2605  \2605  \2605  \2605";
+                        color: #EF9546;
+                        font-size: 20px;
+                    }
+                }
+                p 
+                {
+                    color: hsl(300, 43%, 22%);
+                    font-weight: bolder;
+                }
+            }
+        }
+
+        #cmp_comments 
+        {
+            display: flex;
+            flex-flow: wrap;
+            gap: 20px;
+            .comments
+            {
+                background: hsl(300, 43%, 22%);
+                max-width: 350px;///
+                height: 180px;///
+                padding: 20px;
+                border-radius: 10px;
+                .comments_user
+                {
+                    display: flex;
+                    flex-flow: wrap;
+                    align-items: center;
+                    img 
+                    {
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                    div 
+                    {
+                        margin: 0 1em 0;
+                        .name_avatar 
+                        {
+                            color: white;
+                        }
+                    }
+                    
+                    .text_comments_user 
+                    {
+                        color: white;
+                        flex-basis: 100%;
+                        margin-top: 1em;
+                        opacity: 0.9;
+                    }
+                }
+                .comments_user div p:nth-child(2)
+                {
+                    color: hsl(333, 80%, 67%);
+                }
+            }
+        }
+    }
+}
