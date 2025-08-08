@@ -57,6 +57,10 @@
   }
   #container main .text_user {
     display: flex;
+    align-items: center;
+  }
+  #container main .text_user p {
+    margin-left: 10px;
   }
   #container footer {
     grid-area: f;
@@ -90,9 +94,14 @@ body header button {
 body main .text_main {
   max-width: 580px;
   font-size: 2em;
+  opacity: 0.7;
 }
 body main .text_user {
   max-width: 500px;
+  margin-top: 1em;
+}
+body main .text_user p {
+  color: hsl(240, 18%, 77%);
 }
 body footer {
   width: 100%;

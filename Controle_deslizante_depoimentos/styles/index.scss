@@ -80,6 +80,11 @@
             .text_user 
             {
                 display: flex;
+                align-items: center;
+                p 
+                {
+                    margin-left: 10px;
+                }
             }
         }
 
@@ -133,10 +138,16 @@ body
     {
         max-width: 580px;//
         font-size: 2em;//
+        opacity: .7;
     }
     .text_user
     {
         max-width: 500px;
+        margin-top: 1em;
+        p 
+        {
+            color: hsl(240, 18%, 77%);
+        }
     }
 
    }
