@@ -1,0 +1,153 @@
+@charset"UTF-8";
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:900px){
+    #container 
+    {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        header 
+        {
+            width: 370px;
+            height: 350px;
+            
+            #img_tanya, #img_john 
+            {
+                height: 290px;//
+                margin-top: 35px;
+                margin-left: 40px;
+              
+            }
+        }
+
+        main 
+        {
+            #img_pattern_quotes
+            {
+                transform: translate(100px, 50px);
+            }
+            .text_main
+            {
+                text-align: center;
+            }
+            .text_user 
+            {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width:900px){
+    #container 
+    {
+        display: grid;
+        margin:5em 5em 0 ;//
+        grid-template-areas: "m h"
+                             "f f";
+        header 
+        {
+            width: 550px;
+            height: 510px;
+            grid-area: h;
+            #img_tanya, #img_john
+            {
+                height: 430px;//
+                margin-left: 60px;//
+                margin-top: 45px;//
+            }
+        }
+
+        main 
+        {
+            grid-area: m;
+            #img_pattern_quotes
+            {
+                transform: translate(100px, 200px);
+            }
+            .text_main 
+            {
+                margin-top: 5em;
+            }
+            .text_user 
+            {
+                display: flex;
+            }
+        }
+
+        footer 
+        {
+            grid-area: f;
+        }
+    }
+   
+}
+
+body 
+{
+    #container 
+    {
+        max-width: 2000px;
+        min-height: 70vh;
+    }
+    
+   header 
+   {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: wrap;
+        background: url("../../images/pattern-bg.svg") no-repeat center;
+        background-size: cover;
+
+        #img_tanya, #img_john
+        {
+            box-shadow: -2px 10px 20px 0px hsla(240, 18%, 77%, 0.623);
+        }
+       
+        button 
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            transform: translate(110px, -30px);
+            padding: 15px;
+            border-radius: 25px;
+            border: none;
+            box-shadow: 2px 5px 30px 5px hsl(240, 18%, 77%);
+        }
+   }
+
+   main 
+   {
+
+    .text_main 
+    {
+        max-width: 580px;//
+        font-size: 2em;//
+    }
+    .text_user
+    {
+        max-width: 500px;
+    }
+
+   }
+
+   footer 
+   {
+        width: 100%;
+        overflow: hidden;
+   }
+}
+
+.hidden {
+    display: none;
+}
