@@ -9,7 +9,7 @@
 - Html(Semantica)
 - Css e Scss(Estilos)
 - Javascript(Interatividade)
-- Node.js(Intalação de ferramentas)
+- Node.js(Instalação de ferramentas)
 
 
 ## Paleta de Cores 
