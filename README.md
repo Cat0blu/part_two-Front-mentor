@@ -16,3 +16,4 @@
 - [visualizacao_do_artigo](https://cat0blu.github.io/part_two-Front-mentor/visualizacao_do_artigo/)
 - [Secao_de_prova_social](https://cat0blu.github.io/part_two-Front-mentor/Secao_de_prova_social/)
 - [Controle_deslizante_depoimentos](https://cat0blu.github.io/part_two-Front-mentor/Controle_deslizante_depoimentos/)
+- [Secao_de_introducao](https://cat0blu.github.io/part_two-Front-mentor/Secao_de_introducao/)
