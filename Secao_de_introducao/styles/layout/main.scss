@@ -1,4 +1,8 @@
 
+$white:hsl(0, 0%, 98%);
+$black:hsl(0, 0%, 8%);
+$gray: hsl(0, 0%, 41%);
+
 @media (max-width:770px)
 {
     #img_hero_desktop
@@ -69,18 +73,18 @@
     }
     p 
     {
-        color: hsl(0, 0%, 41%);
+        color: $gray;
         font-weight: 500;
         line-height: 1.5em;
     }
 
     button 
     {
-        background: hsl(0, 0%, 8%);
+        background: $black;
         color: white;
         padding: 13px;
         border-radius: 10px;
-        border: 1px solid hsl(0, 0%, 8%);
+        border: 1px solid $black;
         font-weight: bolder;
         width: 70%;
         max-width: 130px;
@@ -89,8 +93,8 @@
         transition: background-color .4s, color .4s;
         &:hover 
         {
-            background: hsl(0, 0%, 98%);
-            color: hsl(0, 0%, 8%);
+            background: $white;
+            color: $black;
         }
     }
 }

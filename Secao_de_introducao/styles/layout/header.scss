@@ -1,4 +1,8 @@
 
+$white:hsl(0, 0%, 98%);
+$black:hsl(0, 0%, 8%);
+$gray: hsl(0, 0%, 41%);
+
 @media (max-width:770px)
 {
     #menu_desktop 
@@ -21,7 +25,7 @@
             position: absolute;
             top: -1px;
             right: 1px;
-            background: hsl(0, 0%, 98%);
+            background: $white;
             width: 60%;
             height: 100%;
             padding: 20px;
@@ -38,7 +42,7 @@
                     transition: color .5s;
                     &:hover 
                     {
-                        color: hsl(0, 0%, 8%);
+                        color: $black;
                     }
                 }
             }
@@ -79,20 +83,20 @@
                 cursor: auto;
                 a {
                     text-decoration: none;
-                    color: hsl(0, 0%, 41%);
+                    color: $gray;
                     transition: color .5s;
                     &:hover 
                     {
-                        color: hsl(0, 0%, 8%);
+                        color: $black;
                     }
                 }
                 button 
                 {
-                    color: hsl(0, 0%, 41%);
+                    color: $gray;
                     font-weight: 500;
                     padding: 15px;
                     border-radius: 20px;
-                    border: 1px solid hsl(0, 0%, 41%);
+                    border: 1px solid $gray;
                     max-width: 200px;
                     width: 80%;
                     margin-top: 1em;
@@ -101,8 +105,8 @@
                     transition: color .5s, border .5s;
                     &:hover 
                     {
-                        color: hsl(0, 0%, 8%);
-                        border: 1px solid hsl(0, 0%, 8%);
+                        color: $black;
+                        border: 1px solid $black;
                     }
                 }
             }
@@ -129,7 +133,7 @@
             transition: color .4s;
             &:hover 
             {
-                color: hsl(0, 0%, 8%);
+                color: $black;
             }
         }
         .cmp_floating_window
@@ -150,9 +154,9 @@
         #btn_register
         {
             border-radius: 13px;
-            border: 1px solid hsl(0, 0%, 41%);
-            background: hsl(0, 0%, 98%);
-            color: hsl(0, 0%, 41%);
+            border: 1px solid $gray;
+            background: $white;
+            color: $gray;
             padding: 12px;
             width: 100px;
             font-weight: 600;
@@ -160,8 +164,8 @@
             transition: color .4s, border .4s;
             &:hover 
             {
-                color: hsl(0, 0%, 8%);
-                border: 1px solid hsl(0, 0%, 8%);
+                color: $black;
+                border: 1px solid $black;
             }
         }
         }
@@ -170,7 +174,7 @@
         {
             visibility: hidden;
             position: absolute;
-            background: hsl(0, 0%, 98%);
+            background: $white;
             padding: 20px;
             line-height: 2em;
             border-radius: 10px;
@@ -183,7 +187,7 @@
                 transition: color .4s;
                 &:hover 
                 {
-                    color: hsl(0, 0%, 8%);
+                    color: $black;
                 }
                 img
                 {
@@ -218,7 +222,7 @@ header
 
     display: flex;
     align-items: center;
-    color: hsl(0, 0%, 41%);
+    color: $gray;
     
     .logo_top 
     {
