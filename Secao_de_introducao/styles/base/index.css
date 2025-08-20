@@ -1,0 +1,305 @@
+@media (max-width: 770px) {
+  #menu_desktop {
+    display: none;
+  }
+  #menu_mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+  }
+  #menu_mobile #icon_menu_mobile {
+    cursor: pointer;
+  }
+  #menu_mobile #menu_mobile_activated {
+    display: none;
+    position: absolute;
+    top: -1px;
+    right: 1px;
+    background: hsl(0, 0%, 98%);
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    font-weight: 500;
+    z-index: 1;
+  }
+  #menu_mobile #menu_mobile_activated nav {
+    display: flex;
+    flex-flow: wrap;
+    padding: 10px;
+  }
+  #menu_mobile #menu_mobile_activated nav p {
+    cursor: pointer;
+    transition: color 0.5s;
+  }
+  #menu_mobile #menu_mobile_activated nav p:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  #menu_mobile #menu_mobile_activated #close_menu {
+    margin-left: auto;
+    display: block;
+    margin-bottom: 1em;
+    cursor: pointer;
+  }
+  #menu_mobile #menu_mobile_activated .mobile_floating_window .mobile_arrow_down {
+    width: 10px;
+    height: 6px;
+    transform: translateY(2px);
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  #menu_mobile #menu_mobile_activated .mobile_floating_window #mobile_window_features, #menu_mobile #menu_mobile_activated .mobile_floating_window #mobile_window_company {
+    display: none;
+    flex-basis: 100%;
+    margin-left: 20px;
+    margin-top: 1em;
+  }
+  #menu_mobile #menu_mobile_activated .mobile_floating_window #mobile_window_features img, #menu_mobile #menu_mobile_activated .mobile_floating_window #mobile_window_company img {
+    margin-right: 10px;
+  }
+  #menu_mobile #menu_mobile_activated #cmp_logar_mobile {
+    flex-flow: column;
+    align-items: center;
+    margin-top: 1em;
+    cursor: auto;
+  }
+  #menu_mobile #menu_mobile_activated #cmp_logar_mobile a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    transition: color 0.5s;
+  }
+  #menu_mobile #menu_mobile_activated #cmp_logar_mobile a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  #menu_mobile #menu_mobile_activated #cmp_logar_mobile button {
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 41%);
+    max-width: 200px;
+    width: 80%;
+    margin-top: 1em;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.5s, border 0.5s;
+  }
+  #menu_mobile #menu_mobile_activated #cmp_logar_mobile button:hover {
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+  }
+}
+@media (min-width: 770px) {
+  #menu_desktop {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    font-weight: 500;
+  }
+  #menu_desktop .menu_desktop_nav, #menu_desktop .cmp_floating_window {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.4s;
+  }
+  #menu_desktop .menu_desktop_nav:hover, #menu_desktop .cmp_floating_window:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  #menu_desktop .cmp_floating_window img {
+    width: 10px;
+    height: 6px;
+    transform: translateY(2px);
+    margin-left: 5px;
+  }
+  #menu_desktop #cmp_logar {
+    display: flex;
+    float: right;
+    margin-left: auto;
+  }
+  #menu_desktop #cmp_logar #btn_register {
+    border-radius: 13px;
+    border: 1px solid hsl(0, 0%, 41%);
+    background: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    padding: 12px;
+    width: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.4s, border 0.4s;
+  }
+  #menu_desktop #cmp_logar #btn_register:hover {
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+  }
+  #menu_desktop #window_features, #menu_desktop #window_company {
+    visibility: hidden;
+    position: absolute;
+    background: hsl(0, 0%, 98%);
+    padding: 20px;
+    line-height: 2em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 10px hsla(0, 0%, 8%, 0.226);
+  }
+  #menu_desktop #window_features nav, #menu_desktop #window_company nav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.4s;
+  }
+  #menu_desktop #window_features nav:hover, #menu_desktop #window_company nav:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  #menu_desktop #window_features nav img, #menu_desktop #window_company nav img {
+    margin-right: 15px;
+  }
+  #menu_desktop #window_features {
+    transform: translate(140px, 40px);
+  }
+  #menu_desktop #window_company {
+    transform: translate(310px, 40px);
+  }
+  #menu_mobile {
+    display: none;
+  }
+}
+header {
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+}
+header .logo_top {
+  margin: 0 2em;
+  height: 35px;
+}
+header #icon_menu_mobile {
+  height: 25px;
+}
+
+@media (max-width: 770px) {
+  #img_hero_desktop {
+    display: none;
+  }
+  #img_hero_mobile {
+    width: 100%;
+  }
+  #text_main {
+    margin: auto;
+    text-align: center;
+  }
+  #text_main h1 {
+    font-size: 2em;
+  }
+  #text_main p {
+    max-width: 400px;
+  }
+}
+@media (min-width: 770px) {
+  #img_hero_mobile {
+    display: none;
+  }
+  #img_hero_desktop {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+  }
+  #text_main {
+    margin-left: 170px;
+  }
+  #main_img {
+    margin-right: 50px;
+  }
+  #text_main h1 {
+    font-size: 4em;
+    max-width: 430px;
+  }
+  #text_main p {
+    max-width: 450px;
+  }
+}
+#text_main h1 {
+  margin: 2.2em 0 0.8em;
+}
+#text_main p {
+  color: hsl(0, 0%, 41%);
+  font-weight: 500;
+  line-height: 1.5em;
+}
+#text_main button {
+  background: hsl(0, 0%, 8%);
+  color: white;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 8%);
+  font-weight: bolder;
+  width: 70%;
+  max-width: 130px;
+  margin-top: 2em;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+}
+#text_main button:hover {
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+
+footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../../font/Epilogue-VariableFont_wght.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Epilogue;
+}
+* p, * a, * nav {
+  font-size: 18px;
+}
+
+body {
+  background: hsl(0, 0%, 98%);
+  min-height: 100vh;
+  margin-bottom: 5em;
+}
+body #container {
+  display: grid;
+  max-width: 2000px;
+}
+body #container header {
+  grid-area: H;
+}
+body #container #text_main {
+  grid-area: T;
+}
+body #container #img_main {
+  grid-area: I;
+}
+body #container footer {
+  grid-area: F;
+}
+
+@media (max-width: 770px) {
+  #container {
+    grid-template-areas: "H" "I" "T" "F";
+  }
+}
+@media (min-width: 770px) {
+  body {
+    background: hsl(0, 0%, 98%) !important;
+  }
+  #container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "H H" "T I" "T I" "F I";
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

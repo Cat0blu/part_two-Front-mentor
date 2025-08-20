@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@use "layout/header.scss";
+@use"layout/main.scss";
+@font-face {
+    font-family: "Epilogue";
+    src: url("../../font/Epilogue-VariableFont_wght.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Epilogue;
+    p,a,nav{
+        font-size: 18px;
+    }
+}
+
+body 
+{
+    background:  hsl(0, 0%, 98%);
+    min-height: 100vh;
+    margin-bottom: 5em;
+    #container 
+    {
+        display: grid;
+        max-width: 2000px;
+        header 
+        {
+            grid-area: H;
+        }
+        #text_main 
+        {
+            grid-area: T;
+        }
+        #img_main 
+        {
+            grid-area: I;
+        }
+
+        footer 
+        {
+            grid-area: F;
+        }
+    }
+}
+
+ @media (max-width:770px)
+    {
+        #container 
+        {
+            grid-template-areas: "H"
+                                 "I"
+                                "T"
+                                "F";
+         
+        }
+    }
+
+    @media (min-width:770px)
+    {
+        body 
+        {
+            background: hsl(0, 0%, 98%) !important;
+        }
+        #container 
+        {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "H H"
+                                 "T I"
+                                "T I"
+                                "F I";
+        }
+    }
