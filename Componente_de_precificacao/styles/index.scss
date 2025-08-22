@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@use "layout/utills.scss";
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+@media (max-width: 435px){
+
+    p 
+    {
+        text-align: center;
+        margin: auto;
+    }
+    #text_main
+    {
+        h2 
+        {
+            min-width: 300px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        p 
+        {
+            min-width: 220px;
+            text-align: center;
+        }
+    }
+
+    #container_rodape
+    {
+        justify-content: center;
+        #cmp_check 
+        {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            line-height: 2em;
+        }
+    }
+
+    
+    
+
+}
+@media (min-width: 435px){
+    #text_main
+    {
+        h2 
+        {
+            font-size: 1.8em;
+        }
+    }
+
+   #container_rodape
+   {
+     justify-content: space-between;
+   }
+    
+}
+
+.activate 
+{
+  justify-content: end !important;
+  background: utills.$strong_cyan !important;
+}
+
+body 
+{       
+    background: hsl(230, 100%, 99%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    h2
+    {
+        color: utills.$gray_dark;
+    }
+    p 
+    {
+        color: utills.$gray_blue;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    #bg_img 
+    {
+        background:url("../../images/bg-pattern.svg") ;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:top, bottom;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+        transform: translateY(-50%);
+        #text_main 
+        {
+            background: url("../../images/pattern-circles.svg") no-repeat top;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            margin: 5em 0 9em;
+            width: 60%;
+            max-width: 500px;
+            padding: 20px;
+        }
+    }
+    
+    #container 
+    {
+        position: absolute;
+        background: white;
+        padding: 30px;
+        width: 90%;
+        margin-top: 5em;
+        min-width: 300px;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.089);
+        #container_precificacao_value
+        {
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+        
+            #value_ 
+            {
+                color: utills.$gray_dark;
+                font-weight: bolder;
+                font-size: 2em;
+                margin-left: auto;
+                margin-right: 10px;
+            }
+        }
+
+        #range_input 
+        {
+            width: 100%;
+            margin-top: 1.5em;
+            appearance: none;
+            -webkit-appearance: none;
+            background: linear-gradient(to right, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%);
+            cursor: pointer;
+        
+            &::-webkit-slider-runnable-track
+            {
+                border-radius: 20px;
+                height: 10px;
+            }
+            &::-webkit-slider-thumb 
+            {
+                appearance: none;
+                -webkit-appearance: none;
+                border-radius: 50%;
+                background: url("../../images/icon-slider.svg") hsla(174, 76%, 80%, 0.884) no-repeat center; 
+                background-size: 70%;
+                width: 40px;
+                height: 40px;
+                transform: translateY(-15px);
+                transition: box-shadow .4s;
+                &:hover 
+                {
+                    background-color: utills.$strong_cyan ;
+                    box-shadow: 3px 10px 20px 5px hsla(174, 86%, 45%, 0.479);
+                }
+            }
+        }
+
+        #container_monthily_biling
+        {
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            justify-content: end;
+            margin: 2em 0;
+            transform: scale(.8);
+            #cmp_btn_circular
+            {
+                background: utills.$gray_light_blue;
+                width: 50px;
+                height: 25px;
+                padding: 3px;
+                border-radius: 25px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                margin: 0 1em;
+                cursor: pointer;
+                transition: background-color .4s;
+                &:hover 
+                {
+                    background: utills.$cyan;
+                }
+
+                figure 
+                {
+                   
+                    border-radius: 50%;
+                    background: white;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            #cmp_btn_circular + p + p
+            {
+                color: utills.$light_red;
+                margin-left: 16px;
+                background: hsl(14, 92%, 95%);
+                padding: 10px;
+                border-radius: 20px;
+            }
+        }
+        
+        #container_rodape
+            {
+                display: flex;
+                
+                flex-flow: wrap;
+                width: 100%;
+                margin-top: 3em;
+              
+                #cmp_check 
+                {
+                    div
+                    {
+                        display: flex;
+                        align-items: center;
+                        img 
+                        {
+                            height: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                #cmp_btn
+                {
+                    display: flex;
+                    align-items: center;
+                    button 
+                    {
+                        width: 150px;
+                        height: 40px;
+                        border-radius: 20px;
+                        border: none;
+                        background: utills.$gray_dark;
+                        color: utills.$gray_light_blue;
+                        font-weight: bolder;
+                        cursor: pointer;
+                        &:hover 
+                        {
+                            color: white;
+                        }
+                    }
+                }
+            }
+    }
+}

@@ -17,3 +17,4 @@
 - [Secao_de_prova_social](https://cat0blu.github.io/part_two-Front-mentor/Secao_de_prova_social/)
 - [Controle_deslizante_depoimentos](https://cat0blu.github.io/part_two-Front-mentor/Controle_deslizante_depoimentos/)
 - [Secao_de_introducao](https://cat0blu.github.io/part_two-Front-mentor/Secao_de_introducao/)
+- [Componente_de_precificacao](https://cat0blu.github.io/part_two-Front-mentor/Componente_de_precificacao/)
