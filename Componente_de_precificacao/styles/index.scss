@@ -49,6 +49,14 @@
             align-items: center;
             line-height: 2em;
         }
+
+        #cmp_btn
+        {
+            button 
+            {
+                margin-top: 1em;
+            }
+        }
     }
 
     
@@ -82,8 +90,9 @@ body
     background: hsl(230, 100%, 99%);
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+   
     align-items: center;
+    flex-flow: column;
     h2
     {
         color: utills.$gray_dark;
@@ -100,12 +109,12 @@ body
         background-repeat: no-repeat;
         background-size:cover;
         background-position: left bottom;
-        position: absolute;
+        // position: absolute;
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 50%;
-        transform: translateY(-55%);
+        height: 450px;
+        // transform: translateY(-55%);
         #text_main 
         {
             background: url("../../images/pattern-circles.svg") no-repeat top;
@@ -116,7 +125,9 @@ body
             margin: 5em 0 9em;
             width: 60%;
             max-width: 500px;
+            height: 150px;
             padding: 20px;
+            border: 1px solid;
         }
     }
     
@@ -126,11 +137,12 @@ body
         background: white;
         padding: 30px;
         width: 90%;
-        margin-top: 5em;
+        // margin-top: 5em;
         min-width: 300px;
         max-width: 500px;
         border-radius: 10px;
         box-shadow: 3px 3px 20px 1px rgba(0, 0, 0, 0.089);
+        transform: translateY(-150px);
         #container_precificacao_value
         {
             display: flex;
@@ -178,6 +190,11 @@ body
                     background-color: utills.$strong_cyan ;
                     box-shadow: 3px 10px 20px 5px hsla(174, 86%, 45%, 0.479);
                 }
+                &:active 
+                {
+                    background-color: utills.$strong_cyan ;
+                    box-shadow: 3px 10px 20px 5px hsla(174, 86%, 45%, 0.479);
+                }
             }
         }
 
@@ -188,6 +205,8 @@ body
             align-items: center;
             justify-content: end;
             margin: 2em 0;
+            min-width: 400px;
+            border: 1px solid;
             transform: scale(.7);
             #cmp_btn_circular
             {
