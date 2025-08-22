@@ -122,7 +122,7 @@ body
     
     #container 
     {
-        position: absolute;
+        z-index: 1;
         background: white;
         padding: 30px;
         width: 90%;
@@ -188,7 +188,7 @@ body
             align-items: center;
             justify-content: end;
             margin: 2em 0;
-            transform: scale(.8);
+            transform: scale(.7);
             #cmp_btn_circular
             {
                 background: utills.$gray_light_blue;
