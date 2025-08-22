@@ -31,6 +31,14 @@
         }
     }
 
+    #container_precificacao_value 
+    {
+        & p:nth-child(1)
+        {
+            flex-basis: 100%;
+        }
+    }
+
     #container_rodape
     {
         justify-content: center;
@@ -76,7 +84,6 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
     h2
     {
         color: utills.$gray_dark;
@@ -92,13 +99,13 @@ body
         background:url("../../images/bg-pattern.svg") ;
         background-repeat: no-repeat;
         background-size:cover;
-        background-position:top, bottom;
+        background-position: left bottom;
         position: absolute;
         display: flex;
         justify-content: center;
         width: 100%;
         height: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-55%);
         #text_main 
         {
             background: url("../../images/pattern-circles.svg") no-repeat top;
@@ -129,6 +136,7 @@ body
             display: flex;
             flex-flow: wrap;
             align-items: center;
+            min-width: 200px;
         
             #value_ 
             {
@@ -143,7 +151,7 @@ body
         #range_input 
         {
             width: 100%;
-            margin-top: 1.5em;
+            margin-top: 3em;
             appearance: none;
             -webkit-appearance: none;
             background: linear-gradient(to right, hsl(174, 77%, 80%) 50%, hsl(224, 65%, 95%) 50%);
