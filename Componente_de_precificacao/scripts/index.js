@@ -21,7 +21,6 @@ function atulizarBackground(valuee){
 }
 
 
-
 btn_circular.addEventListener("click", ()=>{
     btn_circular.classList.toggle("activate")
 })
